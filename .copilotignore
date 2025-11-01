@@ -1,0 +1,29 @@
+# .copilotignore
+# -----------------------------
+# Purpose:
+# Prevent Copilot agents from overwriting key files
+# and ensure learning progress and documentation stay intact.
+
+# 🧭 CORE RULES
+README.md             # Always read, never overwrite
+notes/                # My reflections and learning logs
+archive/              # Old or completed projects
+.gitignore
+.copilotignore
+
+# 🧪 Active Learning Rules
+# Copilot can edit these *only after confirmation*
+main.py
+zybooks/
+physics/
+
+# 🧱 Protected Files
+# These contain reference materials or key examples
+*.txt
+*.md
+*.pdf
+
+# 🧩 Optional
+# Don’t touch repo metadata or dependencies automatically
+requirements.txt
+.env
