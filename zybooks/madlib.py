@@ -22,7 +22,8 @@ def main() -> None:
             whole_number = int(whole_number_s)
             break
         except ValueError:
-            print("Invalid input: whole number must be an integer. Please try again.")
+            # Show exactly what the user entered (including whitespace)
+            print(f"Invalid input: you entered {whole_number_s!r}. Please try again.")
 
     plural_noun = input("Enter a plural noun: ")
     generic_location = input("Enter a generic location: ")
